@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './card.scss';
 const fbIcon = require('./fbLogo.png');
 const twitterIcon = require('./twitterLogo.svg');
+import { toWords } from '../../utils/toWords';
 
 export default class Card extends Component {
     render() {
@@ -14,6 +15,7 @@ export default class Card extends Component {
              backgroundPosition: 'center'
              }} className={styles.logoSection}/>
              */
+            const voteString = toWords(this.props.cardData.score);
             return (
                 <div className={`${styles.redditCard} ${styles.card}`}>
 
@@ -22,7 +24,7 @@ export default class Card extends Component {
                     <div className={styles.redditInfoSection}>
                     <span className={styles.redditVotes}>
                         <div className={styles.upvoteArrow}/>
-                        <div className={styles.redditScore}>{this.props.cardData.score}</div>
+                        <div className={styles.redditScore}>{voteString}</div>
                         <div className={styles.downvoteArrow}/>
                     </span>
                     <img className={(this.props.cardData.thumbnail === 'self' || this.props.cardData.thumbnail === 'default') ? styles.redditSelf : styles.redditPicture}
