@@ -1,0 +1,417 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 99%;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.app__app___22IA2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.header__header___22OdA {
+  background: #565656;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  box-shadow: 1px 0 7px black;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 1000;
+}
+
+.header__filter___AOXSH {
+  margin-right: 1em;
+  background: transparent;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__filterItem___oDomJ {
+  width: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: transparent;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  margin-left: 10px;
+}
+
+.header__filterItem___oDomJ:first-of-type {
+  margin-left: 0;
+  border: 1px solid #bababa;
+}
+.contentArea__contentArea___1TZBJ {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.feed__feed___1zubI {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: #e3e3e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+}
+.card__card___VGKca:first-of-type {
+  margin-top: 0.5em;
+}
+
+.card__redditVotes___1ZV2U {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__redditCard___3fWRk {
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
+  width: 95%;
+  min-height: 60px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+}
+
+.card__redditCard___3fWRk:first-of-type {
+  margin-top: 0.5em;
+}
+
+.card__redditScore___224m1 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #c6c6c6;
+}
+
+.card__upvoteArrow___2p9It {
+  cursor: pointer;
+  background-image: url(https://www.redditstatic.com/sprite-reddit.6Om8v6KMv28.png);
+  height: 15px;
+  width: 15px;
+  background-position-x: -84px;
+  background-position-y: -1618px;
+}
+
+.card__downvoteArrow___2eDPD {
+  cursor: pointer;
+  background-image: url(https://www.redditstatic.com/sprite-reddit.6Om8v6KMv28.png);
+  height: 15px;
+  width: 15px;
+  background-position-x: -42px;
+  background-position-y: -1618px;
+}
+
+.card__redditInfoSection___zMrK4 {
+  padding-top: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__redditLink___2GTYu {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.card__redditPicture___1r7u5 {
+  width: 90px;
+  height: 60px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: green;
+}
+
+.card__redditSelf___1zlcr {
+  width: 90px;
+  height: 60px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url(https://www.redditstatic.com/sprite-reddit.6Om8v6KMv28.png);
+  background-repeat: no-repeat;
+  background-position: 11px -440px;
+  background-size: 70px 830px;
+}
+
+.card__redditPost___18iyo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 50px;
+  margin-left: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card__redditPost___18iyo a {
+  text-decoration: none;
+  color: #336699;
+}
+
+.card__redditSubmitted___3XK_d {
+  margin-top: 0.25em;
+  color: #888888;
+  font-size: 10px;
+}
+
+.card__redditComments___3xAlj {
+  margin-top: 0.25em;
+  color: #888;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.card__redditComments___3xAlj:hover {
+  cursor: pointer;
+}
+
+.card__twitterCard___1jRIK {
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
+  width: 95%;
+  min-height: 60px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: pink;
+  display: flex;
+}
+
+.card__twitterHeader___3HPdH {
+  height: 40px;
+  background: blue;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__twitterInfoSection___1WPR7 {
+  width: 300px;
+  height: 200px;
+  background: green;
+}
+
+.card__twitterThumbnail___1lD8e {
+  width: 45px;
+  background: black;
+}
+
+.card__twitterUserInfo___32gqx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  background: teal;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__twitterUsername___2Upup {
+  margin-bottom: 3px;
+  font-weight: bold;
+  background: red;
+}
+
+.card__twitterHandle___1W0hL {
+  opacity: 0.5;
+  background: white;
+}
+
+.card__twitterSubmittedTime___2Wa4k {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: purple;
+}
+
+.card__container___1sVMI {
+  width: 95%;
+}
+
+.card__logoSection___2_7r3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  border-radius: 5px;
+  height: 25px;
+  margin-right: 5px;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__infoSection___2KWpz {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: #f6f6f5;
+}
+.sidebar__sidebar___2FPUD {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width: 45px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #bababa;
+}
+
+.sidebar__sidebarExpanded___3cYQx {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #e3e3e3;
+  width: 150px;
+}

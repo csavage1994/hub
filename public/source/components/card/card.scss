@@ -1,0 +1,200 @@
+.card:first-of-type {
+  margin-top: 0.5em;
+}
+
+// ************ reddit card styling **************************
+
+.redditVotes {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redditCard {
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
+  width: 95%;
+  min-height: 60px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-radius: 1px;
+  display: flex;
+  background: transparent;
+
+  &:first-of-type {
+    margin-top: 0.5em;
+  }
+
+}
+
+.redditScore {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(198, 198, 198);
+}
+
+.upvoteArrow {
+  cursor: pointer;
+  background-image: url(https://www.redditstatic.com/sprite-reddit.6Om8v6KMv28.png);
+  height: 15px;
+  width: 15px;
+  background-position-x: -84px;
+  background-position-y: -1618px;
+}
+
+.downvoteArrow {
+  cursor: pointer;
+  background-image: url(https://www.redditstatic.com/sprite-reddit.6Om8v6KMv28.png);
+  height: 15px;
+  width: 15px;
+  background-position-x: -42px;
+  background-position-y: -1618px;
+}
+
+.redditInfoSection {
+  padding-top: 5px;
+  flex-grow: 1;
+  background: transparent;
+  display: flex;
+}
+
+.redditLink {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.redditPicture {
+  width: 90px;
+  height: 60px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: green;
+}
+
+.redditSelf {
+  width: 90px;
+  height: 60px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-image: url(https://www.redditstatic.com/sprite-reddit.6Om8v6KMv28.png);
+  background-repeat: no-repeat;
+  background-position: 11px -440px;
+  background-size: 70px 830px;
+}
+
+.redditPost {
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  margin-left: 5px;
+  flex-grow: 1;
+
+  a {
+    text-decoration: none;
+    color: rgb(51, 102, 153);
+  }
+
+}
+
+.redditSubmitted {
+  margin-top: 0.25em;
+  color: rgb(136, 136, 136);
+  font-size: 10px;
+}
+
+.redditComments {
+  margin-top: 0.25em;
+  color: #888;
+  font-weight: bold;
+  font-size: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+// **************** End reddit card styling, start twitter card styling *********
+
+.twitterCard {
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
+  width: 95%;
+  min-height: 60px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-radius: 1px;
+  display: flex;
+  background: pink;
+  display: flex;
+}
+
+.twitterHeader {
+  height: 40px;
+  background: blue;
+  flex-grow: 1;
+  display: flex;
+}
+
+.twitterInfoSection {
+  width: 300px;
+  height: 200px;
+  background: green;
+}
+
+.twitterThumbnail {
+  width: 45px;
+  background: black;
+}
+
+.twitterUserInfo {
+  display: flex;
+  height: 40px;
+  background: teal;
+  flex-grow: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.twitterUsername {
+  margin-bottom: 3px;
+  font-weight: bold;
+  background: red;
+}
+
+.twitterHandle {
+  opacity: 0.5;
+  background: white;
+}
+
+.twitterSubmittedTime {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: purple;
+}
+
+// ************** End twitter card styling ************************
+
+.container {
+  width: 95%;
+}
+
+.logoSection {
+  flex: 0 0 30px;
+  border-radius: 5px;
+  height: 25px;
+  margin-right: 5px;
+  background: transparent;
+  display: flex;
+}
+
+.infoSection {
+  flex-grow: 1;
+  background: #f6f6f5;
+}

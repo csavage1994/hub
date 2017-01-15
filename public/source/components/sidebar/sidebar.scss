@@ -1,0 +1,13 @@
+.sidebar {
+  transition: all 0.2s ease-in;
+  width: 45px;
+  flex-shrink: 0;
+  background: #bababa;
+}
+
+.sidebarExpanded {
+  composes: sidebar;
+  flex-shrink: 0;
+  background: #e3e3e3;
+  width: 150px;
+}

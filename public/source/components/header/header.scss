@@ -1,0 +1,35 @@
+.header {
+	background: #565656;
+	display: flex;
+	flex: 0 0 20px;
+	box-shadow: 1px 0 7px black;
+	justify-content: flex-end;
+  	align-items: center;
+  	flex-direction: row;
+	z-index: 1000;
+}
+
+.filter {
+  	margin-right: 1em;
+	background: transparent;
+	height: 20px;
+	display: flex;
+  	justify-content: space-around;
+}
+
+.filterItem {
+	width: 20px;
+	cursor: pointer;
+	user-select: none;
+	flex-grow: 0;
+	flex-shrink: 0;
+	background: transparent;
+	transition: background 0.2s;
+	margin-left: 10px;
+
+	&:first-of-type {
+		margin-left: 0;
+		border: 1px solid #bababa;
+	}
+
+}
