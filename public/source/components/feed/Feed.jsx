@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid/v4';
 import styles from './feed.scss';
 const fbIcon = require('../card/fbLogo.png');
 const twitterIcon = require('../card/twitterLogo.svg');
@@ -25,13 +26,12 @@ export default class Feed extends Component {
 
     render() {
 
-
-        console.log(this.state.cardData, 'here');
         const Cards = [];
         this.state.cardData.forEach((item) => {
             const logoIndex = Math.floor(Math.random() * 2);
+            const key = uuid();
             const card = (
-                <Card cardData={item} logo={logoArr[logoIndex]} />
+                <Card key={key} cardData={item} logo={logoArr[logoIndex]} />
             );
             Cards.push(card);
         });

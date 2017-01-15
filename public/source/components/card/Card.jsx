@@ -5,7 +5,6 @@ const twitterIcon = require('./twitterLogo.svg');
 
 export default class Card extends Component {
     render() {
-        console.log(this.props.cardData.thumbnail)
         switch(this.props.cardData.cardType) {
         case 'Reddit': {
             /*
